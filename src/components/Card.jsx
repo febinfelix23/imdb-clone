@@ -12,7 +12,7 @@ function Card({ result }) {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title line-clamp-1">{result.title || result.name}</h2>
-                    <p className='line-clamp-3 text-start'>{result.overview}</p>
+                    <p className='line-clamp-3 text-start'>{result.overview || 'No overview!'}</p>
                     <p className='flex justify-between mt-5'>
                         <span className='flex items-center gap-1'><FaRegStar className='text-yellow-500' /> {(result.vote_average).toFixed(1)}</span>
                         <span className='flex items-center gap-1'><FaRegThumbsUp  className='text-blue-500' /> {result.vote_count}</span>
