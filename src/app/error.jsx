@@ -1,11 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 
-function error({ error, reset }) {
-
-    useEffect(() => {
-        console.log(error);
-    }, [error])
+function error({ reset }) {
 
     return (
         <div className='text-center mt-10'>
